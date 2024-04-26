@@ -14,9 +14,10 @@ const Gallery = () => {
     <div>
       <h1>Galeria</h1>
 
-      <div>
+      <div className="flex flex-wrap justify-center gap-4">
         {data?.map((image) => (
           <img
+            className="w-[150px] "
             key={image.id}
             src={image.urls.regular}
             alt={image.alt_description}
