@@ -9,16 +9,14 @@ const Gallery = () => {
     `https://api.unsplash.com/photos?client_id=${API_KEY}&per_page=40`
   );
 
-  const bio = data?.user?.bio;
   return (
-    <div>
-      <h1>Galeria</h1>
+    <div className="p-4">
+      <h1 className="text-center mb-8 font-bold text-4xl">Galeria</h1>
 
-      <div className="flex flex-wrap justify-center gap-4">
+      <div className="flex flex-wrap justify-center gap-4 ">
         {data?.map((image) => (
           <img
-            className="w-[150px] "
-            key={image.id}
+            className="w-[150px] border-2 border-purple-400"
             src={image.urls.regular}
             alt={image.alt_description}
           />
