@@ -16,7 +16,8 @@ const Gallery = () => {
       <div className="flex flex-wrap justify-center gap-4 ">
         {data?.map((image) => (
           <img
-            className="w-[150px] border-2 border-purple-400"
+            key={image.id}
+            className="w-[350px] border-2 border-purple-400 hover:animate-pulse "
             src={image.urls.regular}
             alt={image.alt_description}
           />

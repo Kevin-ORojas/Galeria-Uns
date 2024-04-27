@@ -1,10 +1,10 @@
 import Gallery from "./components/Gallery";
-import Header from "./components/Header";
+import SearchGallery from "./components/SearchGallery";
 
-function App() {
+function App({ onNewCategory }) {
   return (
-    <main className="bg-stone-600">
-      <Header />
+    <main className="">
+      <SearchGallery />
       <Gallery />
     </main>
   );

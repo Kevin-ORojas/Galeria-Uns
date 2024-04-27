@@ -27,7 +27,7 @@ const useFetch = (url) => {
 
     //sleep
 
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    await new Promise((resolve) => setTimeout(resolve, 1000));
 
     if (!resp.ok) {
       setState({
