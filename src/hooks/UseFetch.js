@@ -12,17 +12,7 @@ const useFetch = (url) => {
     getFetch();
   }, [url]);
 
-  const setLoadingState = () => {
-    setState({
-      data: null,
-      isLoading: true,
-      hasError: false,
-      error: null,
-    });
-  };
-
   const getFetch = async () => {
-    setLoadingState();
     const resp = await fetch(url);
 
     //sleep
@@ -50,8 +40,6 @@ const useFetch = (url) => {
       hasError: false,
       error: null,
     });
-
-    console.log(data);
   };
 
   return {

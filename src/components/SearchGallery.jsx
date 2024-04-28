@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 const SearchGallery = () => {
+  const [search, setSearch] = useState("");
   return (
     <form className="text-center mt-10 ">
       <input

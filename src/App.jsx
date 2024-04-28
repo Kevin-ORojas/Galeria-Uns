@@ -1,10 +1,9 @@
 import Gallery from "./components/Gallery";
 import SearchGallery from "./components/SearchGallery";
 
-function App({ onNewCategory }) {
+function App() {
   return (
-    <main className="">
-      <SearchGallery />
+    <main className="bg-stone-600">
       <Gallery />
     </main>
   );
